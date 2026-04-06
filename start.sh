@@ -1,16 +1,10 @@
 #!/bin/bash
 
-echo "Installing dependencies..."
-
 pip install --upgrade pip
 
-pip install setuptools
+pip install --upgrade setuptools
 
-pip install wheel
-
-pip install -r requirements.txt
-
-echo "Starting backend..."
+pip install --no-cache-dir -r requirements.txt
 
 cd backend
 
