@@ -1,0 +1,42 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# virtual environment
+venv/
+env/
+.venv/
+
+# environment variables
+.env
+
+# database
+db.sqlite3
+
+# migrations compiled
+*.log
+
+# media & static
+media/
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+
+# system
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/
+
+# coverage
+.coverage
+htmlcov/
+
+# celery
+celerybeat-schedule
+
+# local settings
+local_settings.py

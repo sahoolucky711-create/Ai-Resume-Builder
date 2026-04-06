@@ -1,0 +1,7 @@
+--- Fetching http://127.0.0.1:8000/swagger/ ---
+Success: 200
+--- Fetching http://127.0.0.1:8000/api/resumes/list/ ---
+Error: HTTP Error 401: Unauthorized
+--- Fetching http://127.0.0.1:8000/ ---
+Error: HTTP Error 404: Not Found
+Title: Page not found at /

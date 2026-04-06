@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 4%;
+    --foreground: 210 20% 95%;
+
+    --card: 220 18% 7%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 220 18% 7%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 160 84% 39%;
+    --primary-foreground: 220 20% 4%;
+
+    --secondary: 220 16% 12%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 14% 14%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 160 60% 25%;
+    --accent-foreground: 160 84% 70%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 16% 14%;
+    --input: 220 16% 14%;
+    --ring: 160 84% 39%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 220 20% 5%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 220 20% 4%;
+    --sidebar-accent: 220 16% 10%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 16% 12%;
+    --sidebar-ring: 160 84% 39%;
+
+    /* Custom tokens */
+    --glow-primary: 160 84% 39%;
+    --glass-bg: 220 18% 8%;
+    --glass-border: 220 16% 16%;
+    --gradient-start: 160 84% 39%;
+    --gradient-end: 185 80% 45%;
+    --surface-hover: 220 16% 10%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-glass-border rounded-xl;
+  }
+
+  .glow-border {
+    box-shadow: 0 0 20px -5px hsl(var(--glow-primary) / 0.3),
+                inset 0 0 20px -5px hsl(var(--glow-primary) / 0.05);
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-gradient-end bg-clip-text text-transparent;
+  }
+
+  .hero-glow {
+    background: radial-gradient(
+      600px circle at 50% 0%,
+      hsl(var(--glow-primary) / 0.15) 0%,
+      transparent 60%
+    );
+  }
+
+  .dot-pattern {
+    background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.15) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}

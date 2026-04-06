@@ -1,0 +1,136 @@
+﻿
+> vite_react_shadcn_ts@0.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 2082 modules transformed.
+node.exe : 
+[31mx[39m Build 
+failed in 3.94s
+At line:1 char:1
++ & "C:\Program Files\
+nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: ([31mx[39   
+ m Build failed in    
+ 3.94s:String) []    
+, RemoteException
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+[31merror during 
+build:
+[31msrc/App.tsx 
+(7:7): "default" is 
+not exported by "src/p
+ages/Login.tsx", 
+imported by 
+"src/App.tsx".[31m
+file: [36mC:/Users/sa
+hoo/Downloads/AI-Resum
+e-Builder-main/fronten
+d/src/App.tsx:7:7[31m
+[33m
+5: import { 
+BrowserRouter, 
+Routes, Route } from 
+"react-router-dom";
+6: import Index from 
+"./pages/Index";
+7: import Login from 
+"./pages/Login";
+          ^
+8: import Register 
+from 
+"./pages/Register";
+9: import Dashboard 
+from 
+"./pages/Dashboard";
+[31m
+    at getRollupError 
+(file:///C:/Users/saho
+o/Downloads/AI-Resume-
+Builder-main/frontend/
+node_modules/rollup/di
+st/es/shared/parseAst.
+js:402:41)
+    at error (file:///
+C:/Users/sahoo/Downloa
+ds/AI-Resume-Builder-m
+ain/frontend/node_modu
+les/rollup/dist/es/sha
+red/parseAst.js:398:42
+)
+    at Module.error (f
+ile:///C:/Users/sahoo/
+Downloads/AI-Resume-Bu
+ilder-main/frontend/no
+de_modules/rollup/dist
+/es/shared/node-entry.
+js:17040:16)
+    at 
+Module.traceVariable (
+file:///C:/Users/sahoo
+/Downloads/AI-Resume-B
+uilder-main/frontend/n
+ode_modules/rollup/dis
+t/es/shared/node-entry
+.js:17452:29)
+    at ModuleScope.fin
+dVariable (file:///C:/
+Users/sahoo/Downloads/
+AI-Resume-Builder-main
+/frontend/node_modules
+/rollup/dist/es/shared
+/node-entry.js:15070:3
+9)
+    at ReturnValueScop
+e.findVariable (file:/
+//C:/Users/sahoo/Downl
+oads/AI-Resume-Builder
+-main/frontend/node_mo
+dules/rollup/dist/es/s
+hared/node-entry.js:56
+73:38)
+    at FunctionBodySco
+pe.findVariable (file:
+///C:/Users/sahoo/Down
+loads/AI-Resume-Builde
+r-main/frontend/node_m
+odules/rollup/dist/es/
+shared/node-entry.js:5
+673:38)
+    at 
+Identifier.bind (file:
+///C:/Users/sahoo/Down
+loads/AI-Resume-Builde
+r-main/frontend/node_m
+odules/rollup/dist/es/
+shared/node-entry.js:5
+447:40)
+    at 
+CallExpression.bind (f
+ile:///C:/Users/sahoo/
+Downloads/AI-Resume-Bu
+ilder-main/frontend/no
+de_modules/rollup/dist
+/es/shared/node-entry.
+js:2825:28)
+    at 
+CallExpression.bind (f
+ile:///C:/Users/sahoo/
+Downloads/AI-Resume-Bu
+ilder-main/frontend/no
+de_modules/rollup/dist
+/es/shared/node-entry.
+js:12179:15)[39m
