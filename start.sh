@@ -1,9 +1,17 @@
 #!/bin/bash
 
 echo "Installing dependencies..."
+
+pip install --upgrade pip
+
+pip install setuptools
+
+pip install wheel
+
 pip install -r requirements.txt
 
 echo "Starting backend..."
+
 cd backend
 
 python manage.py migrate --noinput
