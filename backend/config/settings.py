@@ -21,7 +21,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "ai-resume-builder-backend-77p6.onrender.com",
     "127.0.0.1",
-    "localhost"
+    "localhost",
+    ".railway.app"
 ]
 
 # ===============================
