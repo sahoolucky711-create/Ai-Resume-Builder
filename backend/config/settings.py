@@ -16,7 +16,7 @@ SECRET_KEY = os.environ.get(
     "SECRET_KEY", "django-insecure-fallback-secret-key-2026"
 )
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "ai-resume-builder-backend-77p6.onrender.com",

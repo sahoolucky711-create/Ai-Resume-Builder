@@ -24,3 +24,5 @@ uritemplate==4.2.0
 dj-database-url
 whitenoise
 psycopg2-binary
+setuptools
+wheel
